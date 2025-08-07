@@ -233,3 +233,5 @@ cat("important during the pandemic, while price sensitivity intensified. These e
 cat("largely persisted in the post-COVID period, suggesting fundamental shifts in\n")
 cat("dining preferences rather than temporary adaptations.\n")
 ```
+
+
