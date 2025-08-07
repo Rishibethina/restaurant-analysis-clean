@@ -1,0 +1,19 @@
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+code, pre {
+  font-family: 'Fira Code', monospace;
+  background-color: #f8f9fa;
+  padding: 2px 4px;
+  border-radius: 4px;
+}

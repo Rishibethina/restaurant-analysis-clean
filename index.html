@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Home – What Makes Restaurants Thrive? How Success Factors Evolved from 2018-2023</title>
+<title>Home – What Makes Restaurants Thrive? How Success Factors Evolved from 2018–2023</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,7 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9d882aefbe6880e209bb4e231fcedeb2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6bdd2aebeb936dcddaa5f935a5de481c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">What Makes Restaurants Thrive? How Success Factors Evolved from 2018-2023</span>
+    <span class="navbar-title">What Makes Restaurants Thrive? How Success Factors Evolved from 2018–2023</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -347,42 +347,6 @@ Post-COVID   500        3500     3.761      0.582      39.2       70.6       53.
 <pre><code>   • Digital engagement emerged as a key competitive advantage</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code>🔧 METHODOLOGY &amp; TECHNICAL DETAILS</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>===================================</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>ANALYTICAL APPROACH:</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>• Regression coefficient comparison across three time periods</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>• 95% confidence intervals calculated using robust standard errors</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>• Time series analysis with 3-month moving averages</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>• Category-level analysis with statistical significance testing</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>DATA PROCESSING:</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>• Data manipulation: dplyr for grouping, filtering, and summarizing</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>• Date handling: lubridate for period categorization</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>• Visualization: ggplot2 with enhanced styling and annotations</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>• Missing data: Complete case analysis (no missing values in key variables)</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
 <pre><code>MODEL SPECIFICATIONS:</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
@@ -396,66 +360,6 @@ Post-COVID   500        3500     3.761      0.582      39.2       70.6       53.
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>• Sample size: 10,000 reviews across 500 restaurants</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>💡 ADAPTING THIS ANALYSIS FOR YOUR ACTUAL YELP DATA</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>====================================================</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>STEP 1: DATA IMPORT</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   Replace sample data generation with:</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   restaurant_data &lt;- read_csv('yelp_academic_dataset_business.csv')</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   review_data &lt;- read_csv('yelp_academic_dataset_review.csv')</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>STEP 2: VARIABLE MAPPING</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   • Map 'stars' to your rating variable</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   • Map 'categories' to restaurant type classification</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   • Extract delivery/takeout from 'attributes' column</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   • Use 'date' field for temporal analysis</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>STEP 3: STATISTICAL MODELING</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   • Run actual regression models: lm(stars ~ predictors * period)</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   • Extract coefficients and confidence intervals</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   • Replace coefficient_data with your actual results</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   • Test for significant interaction effects</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>STEP 4: VALIDATION</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   • Check model assumptions (residual plots, normality)</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   • Perform robustness checks with alternative specifications</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   • Validate findings with holdout test set</code></pre>
 </div>
 </div>
 

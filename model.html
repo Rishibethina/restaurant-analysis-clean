@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Models – What Makes Restaurants Thrive? How Success Factors Evolved from 2018-2023</title>
+<title>Models – What Makes Restaurants Thrive? How Success Factors Evolved from 2018–2023</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,7 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9d882aefbe6880e209bb4e231fcedeb2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6bdd2aebeb936dcddaa5f935a5de481c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">What Makes Restaurants Thrive? How Success Factors Evolved from 2018-2023</span>
+    <span class="navbar-title">What Makes Restaurants Thrive? How Success Factors Evolved from 2018–2023</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -141,243 +141,16 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>**LINEAR REGRESSION MODEL FOR RESTAURANT SUCCESS ANALYSIS**</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>============================================================</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>**Model 2 Equation (Time-Varying Coefficients):**</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$$\begin{aligned}</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>\text{Rating}_{it} &amp;= \beta_0 + \sum_{p \in \{\text{COVID}, \text{Post}\}} \alpha_p \cdot \text{Period}_p \\</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>&amp;\quad + \beta_1 \text{Price}_{i} + \sum_{p \in \{\text{COVID}, \text{Post}\}} \gamma_{1p} (\text{Price}_{i} \times \text{Period}_p) \\</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>&amp;\quad + \beta_2 \text{Delivery}_{i} + \sum_{p \in \{\text{COVID}, \text{Post}\}} \gamma_{2p} (\text{Delivery}_{i} \times \text{Period}_p) \\</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>&amp;\quad + \beta_3 \text{Takeout}_{i} + \sum_{p \in \{\text{COVID}, \text{Post}\}} \gamma_{3p} (\text{Takeout}_{i} \times \text{Period}_p) \\</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>&amp;\quad + \beta_4 \log(\text{Reviews})_{i} + \sum_{p \in \{\text{COVID}, \text{Post}\}} \gamma_{4p} (\log(\text{Reviews})_{i} \times \text{Period}_p) + \epsilon_{it}</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>\end{aligned}$$</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>**Where:**</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>- $\text{Rating}_{it}$ = Star rating for restaurant $i$ at time $t$ (1-5 scale)</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>- $\text{Price}_{i}$ = Price level for restaurant $i$ (1-4 scale)</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>- $\text{Delivery}_{i}$ = Binary indicator for delivery availability</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>- $\text{Takeout}_{i}$ = Binary indicator for takeout availability</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>- $\log(\text{Reviews})_{i}$ = Log of total review volume for restaurant $i$</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>- $\text{Period}_p$ = Binary indicators for COVID and Post-COVID periods</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>- $\gamma_{jp}$ = Interaction coefficients showing how effect of variable $j$ changes in period $p$</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>- $\epsilon_{it}$ = Error term</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>**MODEL 2: TIME-VARYING COEFFICIENTS REGRESSION RESULTS**</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>==========================================================</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-
-|term                      | estimate| std.error| statistic| p.value|
-|:-------------------------|--------:|---------:|---------:|-------:|
-|(Intercept)               |   3.5821|    0.0294|  121.7643|  0.0000|
-|price                     |   0.0571|    0.0089|    6.3934|  0.0000|
-|has_delivery              |   0.0778|    0.0203|    3.8376|  0.0001|
-|has_takeout               |   0.0537|    0.0217|    2.4762|  0.0133|
-|log_reviews               |       NA|        NA|        NA|      NA|
-|covid_period              |   0.1292|    0.0433|    2.9834|  0.0029|
-|post_period               |  -0.0555|    0.0416|   -1.3341|  0.1822|
-|price:covid_period        |  -0.0794|    0.0131|   -6.0422|  0.0000|
-|price:post_period         |   0.0068|    0.0126|    0.5409|  0.5886|
-|has_delivery:covid_period |   0.3976|    0.0298|   13.3239|  0.0000|
-|has_delivery:post_period  |   0.0421|    0.0287|    1.4684|  0.1420|
-|has_takeout:covid_period  |  -0.0147|    0.0319|   -0.4611|  0.6448|
-|has_takeout:post_period   |  -0.0204|    0.0307|   -0.6648|  0.5062|
-|log_reviews:covid_period  |       NA|        NA|        NA|      NA|
-|log_reviews:post_period   |       NA|        NA|        NA|      NA|</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-**Model Statistics:**</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>- R-squared: 0.0654</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>- Adjusted R-squared: 0.0644</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>- F-statistic: 63.55 (p &lt; 0.001)</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>- Observations: 10000</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>- Residual standard error: 0.5835</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>**COEFFICIENT INTERPRETATION BY TIME PERIOD**</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>==============================================</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>**Effective Coefficients by Period:**</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>**Pre-COVID (2018-2019) - Baseline Coefficients:**</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>- Price: 0.0571</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>- Delivery: 0.0778</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>- Takeout: 0.0537</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>- Log(Reviews): NA</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>**COVID Era (2020-2021) - Modified Coefficients:**</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>- Price: 0.0571 (baseline) + -0.0794 (interaction) = -0.0223</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>- Delivery: 0.0778 (baseline) + 0.3976 (interaction) = 0.4754</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>- Takeout: 0.0537 (baseline) + -0.0147 (interaction) = 0.0390</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>- Log(Reviews): NA (baseline) + NA (interaction) = NA</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>**Post-COVID (2022-2023) - Modified Coefficients:**</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>- Price: 0.0571 (baseline) + 0.0068 (interaction) = 0.0639</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>- Delivery: 0.0778 (baseline) + 0.0421 (interaction) = 0.1199</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>- Takeout: 0.0537 (baseline) + -0.0204 (interaction) = 0.0333</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>- Log(Reviews): NA (baseline) + NA (interaction) = NA</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>**KEY FINDINGS FROM TIME-VARYING COEFFICIENTS MODEL**</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>======================================================</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>**1. DELIVERY COEFFICIENT EVOLUTION:**</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   - Pre-COVID: 0.0778</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   - COVID Era: 0.4754</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   - Post-COVID: 0.1199</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   - **Change from Pre-COVID to COVID Era: 511.1%**</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   - **Sustained effect in Post-COVID: 54.1%**</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>**2. PRICE SENSITIVITY CHANGES:**</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   - Pre-COVID: 0.0571</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   - COVID Era: -0.0223</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   - Post-COVID: 0.0639</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   - **Price sensitivity increased by -60.9% during COVID**</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   - **Moderated but remained elevated post-COVID**</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>**3. STATISTICAL SIGNIFICANCE:**</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   - NA out of 8 interaction terms are statistically significant (p &lt; 0.05)</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   - Strong evidence for structural breaks during COVID-19 period</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   - Model explains significantly more variation than baseline model</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>**ECONOMIC INTERPRETATION:**</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>============================</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>The time-varying coefficients model reveals that COVID-19 created permanent</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>structural changes in restaurant consumer behavior. The large, significant</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>interaction terms demonstrate that delivery capability became dramatically more</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>important during the pandemic, while price sensitivity intensified. These effects</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>largely persisted in the post-COVID period, suggesting fundamental shifts in</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>dining preferences rather than temporary adaptations.</code></pre>
-</div>
-</div>
+<p>Model 1: Baseline Linear Regression The formula we use to predict a restaurant’s rating in our baseline model looks like this:</p>
+<p>Ratingit​=β0​+β1​⋅Pricei​+β2​⋅Deliveryi​+β3​⋅Takeouti​+β4​⋅log(Reviews)i​+εit​</p>
+<p>Rating: This is the predicted star rating for a specific restaurant.</p>
+<p>β0: This is the baseline rating for a restaurant, before considering any other factors.</p>
+<p>β1: This represents the adjustment to the rating based on a restaurant’s price level.</p>
+<p>β2: This represents the adjustment to the rating based on delivery availability.</p>
+<p>β3: This represents the adjustment to the rating based on takeout availability.</p>
+<p>β4: This represents the adjustment to the rating based on the restaurant’s review volume.</p>
+<p>εi: This is a small adjustment for all the random factors that the model doesn’t account for.</p>
+<p>Model 1 is a straightforward linear regression that predicts restaurant ratings based on four key characteristics. It assumes that the relationship between these factors (price, delivery availability, takeout availability, and review volume) and ratings stays constant over time. This model gives us a baseline understanding of what generally makes restaurants successful, but it doesn’t account for how these relationships might have changed during different periods like the COVID pandemic.</p>
 
 
 
