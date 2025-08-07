@@ -1,0 +1,15 @@
+---
+title: "About"
+format: html
+---
+Hello! I'm Rishith Bethina
+I'm a rising junior at Dublin Jerome High School with a passion for economics and data science and their real‑world applications.
+
+📧 Email: bethinarishith@gmail.com
+
+
+
+💻 GitHub: restaurant-analysis-clean(https://github.com/Rishibethina/restaurant-analysis-clean)
+
+This project was created as a part of Kane's Data Science Bootcamp.
+https://bootcamp.davidkane.info/schedule.html)

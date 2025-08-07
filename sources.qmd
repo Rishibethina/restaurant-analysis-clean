@@ -1,0 +1,42 @@
+---
+title: "Sources"
+format: html
+---
+
+## Data Sources
+
+Yelp Open Dataset — Restaurant business information and customer reviews (2018–2023)
+Simulated COVID-19 Impact Data
+
+Pre-COVID baseline ratings and service patterns (2018–2019)
+COVID Era disruption patterns and adaptation responses (2020–2021)
+Post-COVID recovery and sustained behavioral changes (2022–2023)
+
+
+
+## Key variables analyzed:
+
+stars — Customer rating (1-5 scale)
+
+
+categories — Restaurant type classification
+
+
+attributes — Service features (delivery, takeout availability)
+
+
+price_range — Restaurant price level (1-4 scale)
+
+
+review_date — Timestamp for temporal analysis
+
+
+business_id — Unique restaurant identifier
+
+
+## Software & Packages
+
+R (4.0+) with:
+
+ggplot2, dplyr, lubridate, readr
+gridExtra, scales
